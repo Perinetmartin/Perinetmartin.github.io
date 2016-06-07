@@ -13,11 +13,13 @@ $(document).ready(function() {
   $('#slider-links').children('li')
   .each(function() {
     var $link = $(this).find('a');
-    var target = $link.data('target');
+    var $target = $('#' + $link.data('target'));
     $link.on('click', function(e) {
       e.preventDefault();
-      $('#slider').trigger('set-active');
-      $('#' + target).show('slow');
+      if ($target.css('display') === 'none') {
+        $('#slider').trigger('set-active');
+        $target.show('slow');
+      }
     });
   });
 
