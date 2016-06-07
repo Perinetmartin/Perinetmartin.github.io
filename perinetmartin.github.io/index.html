@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <title>LightinNight</title>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Application permettant la création, la recherche partout en France. LightinNight l'applicaton à télécharger gratuitement des maintenant, et aux multiples fonctionnalités différentes." />
+        <meta name="keywords" content="soirée, application, lightinnight, fonctionnalité, trouver, creer, chercher, club, bar, location, améliorer, profil, ami, gratuitement, télécharger, france, particulier, professionnel" />
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="desktop" id="accueil">
+            <div class="navbar-fixed">
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="#!">Déposer un CV </a></li>
+                    <li><a href="#!"> Plus d'information</a></li>
+                </ul>
+                <nav>
+                    <div class="nav-wrapper container">
+                        <a href="#!" class="brand-logo"><img src="images/logo.png" alt="www.lightinnight.com" /></a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#">Fonctionnalité</a></li>
+                            <li><a href="#">Professionnel</a></li>
+                            <li><a href="#apropos">A Propos</a></li>
+                            <!-- Dropdown Trigger -->
+                            <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
+                        </ul>
+                        <ul class="side-nav" id="mobile-demo">
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Fonctionnalité</a></li>
+                            <li><a href="#">Professionnel</a></li>
+                            <li><a href="#">A propos</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col l12 top-push">
+                            <div class="col l6 border center-mobile">
+                                <div class="col l10 m12 s12">
+                                    <h2>Bonjour</h2>
+                                </div>
+                                <div class="col l8 m12 s12">
+                                    <h3>L’application faites pour vos soirées.</h3>
+                                </div>
+                                <div class="col l10 m12 s12">
+                                    <p>La nouvelle application en vogue pour creer ou trouver vos soirées partout en France & à toutes heures du jour et de la nuit.</p>
+                                </div>
+                                <div class="col l12 m12 s12">
+                                    <span>télécharger l'application gratuitement</span>
+                                </div>
+                                <div class="col l5 m12 s12">
+                                    <div class="col l12">
+                                        <a href="#!"><img src="./images/ap.png" alt="AppleStore.com"></a>
+                                    </div>
+                                </div>
+                                <div class="col l5 m12 s12">
+                                    <div class="col l12">
+                                        <a href="#!"><img src="./images/ggplay.png" alt="Googleplay.com"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l6">
+                                <div class="col l12 m12 s12">
+                                    <h2 class="right">Inscription</h2>
+                                </div>
+                                <div id="login" class="login col l12">
+                                    <form action="action.php">
+                                        <div class="row">
+                                            <div class="right input-field col l8 offset-l2">
+                                                <input id="pseudo" type="text" class="validate">
+                                                <label for="pseudo">Pseudo</label>
+                                            </div>
+                                            <div class="right input-field col l8 offset-l2">
+                                                <input id="password" type="password" class="validate">
+                                                <label for="password">Mot de Passe</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="col s12 ">
+                                        <a href="#modal1" class="right">S'inscrire</a>
+                                    </div>
+                                    <div class="col s12 ">
+                                        <a href="#modal2" class="right">Mot de passe oublier</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="apropos" id="apropos">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="col l6 yep">
+                                <img src="./images/1.png" alt="">
+                            </div>
+                            <div class="push-up">
+                                <div class="col l6 right">
+                                    <div class="col l12">
+                                        <h3>A propos de nous</h3>
+                                    </div>
+                                    <div class="col l12">
+                                        <p>Jeune entreprise Parisienne, développent une application web ayant pour but de faciliter la création de soirées ou la recherche de ces dites soirées qu’elles soient privées ou bien public, proposées par des particuliers ou professionnels. Cette recherche étant aider par de nombreux filtres.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="features">
+                <h1 class="center">Les Fonctionnalités</h1>
+                <nav class="container">
+                    <ul id="slider-links" class="row">
+                        <li class="col s2"><a href="#slider-1" data-target="slide-1" class="slide-1">Créer</a></li>
+                        <li class="col s2"><a href="#slider-2" data-target="slide-2" class="slide-2">Trouver</a></li>
+                        <li class="col s2"><a href="#slider-3" data-target="slide-3" class="slide-3">Classement</a></li>
+                        <li class="col s2"><a href="#slider-4" data-target="slide-4" class="slide-4">Profil</a></li>
+                        <li class="col s2"><a href="#slider-5" data-target="slide-5" class="slide-5">Calendrier</a></li>
+                        <li class="col s2"><a href="#slider-6" data-target="slide-6" class="slide-6">A venir</a></li>
+                    </ul>
+                </nav>
+                <div id="slider" class="row">
+                    <article class="slide col l12 active" id="slide-1">
+                        <div class="col l6">
+                            <div class="col l8 offset-l2">
+                                <h2 class="left">Créer ses soirées</h2>
+                            </div>
+                            <div class="col l8 offset-l2">
+                                <h3 class="left">Un moyen simple de se retrouver et partager. Ajouter ces amis et preparer un panier.</h3>
+                            </div>
+                        </div>
+                        <div class="col l6 bis center">
+                            <img src="./images/4.png" alt=""/>
+                        </div>
+                    </article>
+                    <article class="slide col l12" id="slide-2">
+                        <div class="col l6">
+                            <div class="col l8 offset-l2">
+                                <h2 class="left">Trouver ses soirées</h2>
+                            </div>
+                            <div class="col l8 offset-l2">
+                                <h3 class="left">Rechercher près de chez toi, la soirée parfaite à tes yeux. Simple et efficace.</h3>
+                            </div>
+                        </div>
+                        <div class="col l6 bis center">
+                            <img src="./images/4.png" alt=""/>
+                        </div>
+                    </article>
+                    <article class="slide col l12" id="slide-3">
+                        <div class="col l6">
+                            <div class="col l8 offset-l2">
+                                <h2 class="left">Classements des soirées</h2>
+                            </div>
+                            <div class="col l8 offset-l2">
+                                <h3 class="left">Quoi de mieux que de chercher le top des soirées et de pouvoir les noter !</h3>
+                            </div>
+                        </div>
+                        <div class="col l6 bis center">
+                            <img src="./images/3.png" alt=""/>
+                        </div>
+                    </article>
+                    <article class="slide col l12" id="slide-4">
+                        <div class="col l6">
+                            <div class="col l8 offset-l2">
+                                <h2 class="left">Créer son profil</h2>
+                            </div>
+                            <div class="col l8 offset-l2">
+                                <h3 class="left">Une page personnalisé avec son label et son skill afin d'épater tout tes amis.</h3>
+                            </div>
+                        </div>
+                        <div class="col l6 bis center">
+                            <img src="./images/5.png" alt=""/>
+                        </div>
+                    </article>
+                    <article class="slide col l12" id="slide-5">
+                        <div class="col l6">
+                            <div class="col l8 offset-l2">
+                                <h2 class="left">Gérer son planning</h2>
+                            </div>
+                            <div class="col l8 offset-l2">
+                                <h3 class="left">Via des notif et un calendrier soyer toujours au courant de votre planning.</h3>
+                            </div>
+                        </div>
+                        <div class="col l6 bis center">
+                            <img src="./images/6.png" alt=""/>
+                        </div>
+                    </article>
+                    <article class="slide col l12" id="slide-6">
+                        <div class="col l6">
+                            <div class="col l8 offset-l2">
+                                <h2 class="left">Créez vos soirées</h2>
+                            </div>
+                            <div class="col l8 offset-l2">
+                                <h3 class="left">Un moyen simple de se retrouver et partager. Ajouter ces amis et preparer un panier.</h3>
+                            </div>
+                        </div>
+                        <div class="col l6 bis center">
+                            <img src="./images/4.png" alt=""/>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="nous">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="col l8 offset-l1">
+                                <h4>Contactez nous !</h4>
+                            </div>
+                            <div class="col l6 offset-l2">
+                                <p>Ci, vous pouvez voir notre équipe de jeunes entreprenant ayant monter se projet. Si vous avez des questions, des sugestions ou que vous voulez contribuer, merci de nous contactez sur notre page professionel. Nous vous repondrons dès que possible.</p>
+                            </div>
+                            <div class="col l6 center">
+                                <div class="col s12">
+                                    <img src="./images/Martin.png" alt="">
+                                </div>
+                                <div class="col s4 offset-s4">
+                                    <p class="text-orange">Martin Périnet</p>
+                                </div> 
+                                <div class="col s6 offset-s3">
+                                    <p>Directeur général et Co-fondateur.
+                                        Ce jeune entrepeneur de 21 ans, charger de la gestion de l’entreprise, et de sa creation..</p>
+                                </div>
+
+                            </div>
+                            <div class="col l6 center">
+                                <div class="col s12">
+                                    <img src="./images/Maxime.png" alt="">
+                                </div>
+                                <div class="col s4 offset-s4">
+                                    <p class="text-orange">Maxime Martinez</span>
+                            </div> 
+                            <div class="col s6 offset-s3">
+                                <p>Directeur Marketing, et Co-fondateur. 
+                                    Ce jeune Youtubeur de 18 ans pleins de ressource, aux talents prometteurs. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <footer class="page-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5 class="white-text">
+                                <span>M</span>ention légale
+                            </h5>
+                            <ul>
+                                <li><a href="#!"><span>C</span>ondition d'utilisation</a></li>
+                                <li><a href="#!"><span>L</span>'entreprise</a></li>
+                                <li><a href="#!"><span>N</span>otre support</a></li>
+                                <li><a href="#!"><span>D</span>es questions ?</a></li>
+                            </ul>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                            <h5 class="white-text">
+                                <span>à</span> voir aussi
+                            </h5>
+                            <ul>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">
+                                        <span>E</span>-mail
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">
+                                        <span>F</span>acebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">
+                                        <span>T</span>witter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="grey-text text-lighten-3" href="#!">
+                                        <span>Y</span>outube
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="foot" class="footer-copyright">
+                    <div class="container">
+                        © 2016 Light<span>in</span>Night, Tout droit réserver.
+                        <a class="white-text text-lighten-4 right" href="#!">
+                            <span>C</span>ontact
+                        </a>
+                        <a class="white-text text-lighten-4 right" href="#!">
+                            <span>A</span> propos-
+                        </a>
+                        <a class="white-text text-lighten-4 right" href="#!">
+                            <span>P</span>rofessionels-
+                        </a>
+                        <a class="white-text text-lighten-4 right" href="#!">
+                            <span>F</span>onctionnalités-
+                        </a>
+                        <a class="white-text text-lighten-4 right" href="#!">
+                            <span>A</span>ccueil- 
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="mobile center">
+            <div class="col s12">
+                <h2>Light<span>in</span>Night</h2>
+            </div>
+            <div class="col s12">
+                <h3>Veuilliez poursuivre sur l'application.</h3>
+            </div>
+            <div class="col s12">
+                <a href="#!"><img src="./images/ap.png" alt="AppleStore.com/LightinNight"></a>
+            </div>
+            <div class="col s12">
+                <a href="#!"><img src="./images/ggplay.png" alt="Googleplay.com/LightinNight"></a>
+            </div>
+            <footer>
+                <h5>© 2016 Light<span>in</span>Night, Tout droit réserver.</h5>
+            </footer>
+        </div>
+        <!--Import jQuery before materialize.js-->
+
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="./js/my-js.js"></script>
+    </body>
+</html>
