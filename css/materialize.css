@@ -12067,6 +12067,11 @@
     article div.col.l6.bis img{
         width: 25%;        
     }
+    @media only screen and (max-width: 1290px) {
+        header img {
+            width: 100%;
+        }
+    }
 }
 @media only screen and (max-width: 992px) {
     .desktop{
